@@ -1,0 +1,9 @@
+
+.card {
+    margin-bottom: 30px;
+    border: none;
+    box-shadow: $shadow;
+    color: $gray-500;
+    background-color: lighten($main-dark, 5%);
+  }
+  

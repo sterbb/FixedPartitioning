@@ -1,0 +1,16 @@
+
+.modal-content{
+  background-color: darken($gray-800, 2%);
+  .modal-header{
+    border-bottom: 1px solid $gray-600;
+  }
+  .modal-footer{
+    border-top: 1px solid $gray-600;
+  }
+  .close:not(:disabled):not(.disabled):focus, 
+  .close:not(:disabled):not(.disabled):hover,
+  button.close{
+    color: $white;
+    text-shadow: none;
+  }
+}

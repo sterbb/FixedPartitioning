@@ -1,0 +1,38 @@
+
+.mce-panel{
+  border-color: $gray-600 !important;
+}
+.mce-tinymce{
+  box-shadow: none !important;
+}
+.mce-flow-layout{
+  background-color: $gray-800 !important;
+}
+.mce-btn {
+  background: $gray-600 !important;  
+  &:hover{
+    border-color: $gray-600 !important;
+    color: $gray-300 !important;
+  }
+}
+.mce-splitbtn:hover .mce-open,
+.mce-splitbtn .mce-open:hover, 
+.mce-splitbtn .mce-open:active {
+  border-left: 1px solid $gray-600 !important;
+}
+
+.mce-btn-group:not(:first-child) {
+  border-left: 1px solid $gray-600 !important;
+}
+.mce-ico{
+  color:$gray-300 !important;
+}
+.mce-label{
+  text-shadow: none !important;
+  color: $gray-500 !important;
+}
+.mce-menubar {
+  border: 1px solid $gray-900 !important;
+}
+
+

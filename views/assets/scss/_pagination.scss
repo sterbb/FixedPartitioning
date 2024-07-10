@@ -1,0 +1,78 @@
+
+.page-item.disabled 
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus,
+.page-item.active .page-link {
+  background: lighten($gray-800, 10%);
+  border-color:lighten($gray-800, 3%);
+  color:$gray-400;
+}
+
+
+/*-- Costum --*/
+
+.pagination{
+  .page-link {
+    color: $gray-500;
+    background: $gray-800;
+    border: 1px solid $gray-600;
+    &:focus{
+      box-shadow: 0 0 0 0.15rem rgba($gray-500,.35);
+      background-color: rgba($main-dark,.3);
+    }
+  }
+  .page-item.disabled{
+    .page-link {
+      color: lighten($gray-600, 8%);
+      background: lighten($gray-800, 3%);
+      border: 1px solid $gray-600;
+    }
+  }
+}
+
+.custom-pagination {
+  .page-link {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding-left: 14px;
+    line-height: 24px;
+    color: $gray-400;
+    background: lighten($gray-800, 3%);
+    border: 1px solid $gray-600;
+    &:focus{
+      box-shadow: 0 0 0 0.15rem rgba($dark,.35);
+      background-color: rgba($dark,.15);
+    }
+  }
+  .active .page-link{
+    background-color: rgba($danger,0.15);
+    border:1px solid rgba($danger,0.5);
+    color: $danger;
+    border-radius: 50%;
+  }
+}
+
+.custom-pagination2 span{   
+    color: $danger;
+    background-color: rgba($danger,0.15);
+    border:1px solid rgba($danger,0.5);
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 8%;
+}
+
+
+@media (max-width: 620px){
+  .pagination-lg .page-link {
+      padding: .25rem .5rem;
+      font-size: 15px;
+  }
+}

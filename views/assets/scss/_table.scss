@@ -1,0 +1,118 @@
+.table{
+    th {
+        font-weight: 500;
+        border-top: 1px solid $gray-800;
+        color: $gray-500;
+    }
+    td{
+        color: $gray-500;
+    }
+}
+
+
+.table-bordered {
+    border-color: $gray-600;
+    td,
+    th {
+        font-weight: 500;
+        border-color: $gray-600;
+        font-weight: 500;
+    }
+    thead {
+        background-color: $gray-700;       
+    }
+}
+
+.table-striped {
+    tbody {
+        tr:nth-of-type(odd) {
+            background-color: transparent;
+        }
+        tr:nth-of-type(even) {
+            background-color: rgba($gray-600, .4);
+        }
+    }
+}
+
+.table {
+    thead tr th {
+        font-weight: 500;
+        color: $gray-400;
+        background-color: $gray-800;
+        font-size: 13px;
+        border-color: $gray-600;
+    }
+    td {
+        vertical-align: middle;
+        border-top: 1px solid $gray-800;
+    }
+}
+
+.table-hover tbody tr:hover {
+    background-color: $gray-900;
+}
+
+.table-light {
+    thead tr th {
+        background-color: $gray-200;
+        border-top-color: transparent;
+        color:$gray-900;
+    }
+    tbody>tr>td,
+    th {
+        color: $gray-700;
+        background-color: lighten($gray-100, 5%);
+    }
+}
+
+/*== Table Responsive ==*/
+.table-responsive[data-pattern="priority-columns"]{
+    border: 1px solid $gray-600;
+}
+
+.table-rep-plugin {
+    .btn-toolbar {
+        display: block;
+    }
+    .btn-default {
+        border-color: rgba($primary, 0.3);
+        background-color: rgba($primary, 0.2);
+        color: $primary;
+        margin-right: 5px;
+        &:focus {
+            color: $primary;
+        }
+    }
+    .btn-default.btn-primary:active,
+    .btn-default.btn-primary:hover,
+    .btn-default.btn-primary:focus {
+        border-color: rgba($primary, 0.3) !important;
+        background-color: rgba($primary, 0.2) !important;
+        color: $primary;
+        
+    }
+    .btn:focus{
+        box-shadow: 0 0 0 0.2rem $primary;
+    }
+    tbody th {
+        font-size: 14px;
+        font-weight: normal;
+    }
+}
+
+table.focus-on tbody tr.unfocused th, table.focus-on tfoot tr.unfocused th, table.focus-on tbody tr.unfocused td, table.focus-on tfoot tr.unfocused td {
+    color: rgba($white,0.2);
+}
+
+table.focus-on tbody tr.focused th, table.focus-on tfoot tr.focused th, table.focus-on tbody tr.focused td, table.focus-on tfoot tr.focused td {
+    background-color: $primary;
+    color: $white;
+    border-color: $primary;
+}
+
+/* Sticky Header */
+.fixed-solution .sticky-table-header {
+  top: $topbar-height !important;
+  border-top: 2px solid $gray-600;
+  border-bottom: 2px solid $gray-600;
+}

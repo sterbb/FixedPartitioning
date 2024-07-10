@@ -1,0 +1,121 @@
+.nav-tabs {
+  border-bottom: 1px solid $gray-500;
+}
+.nav-tabs,.nav-pills {
+  .nav-link {
+    color: $gray-400;
+    font-weight: 400;
+    &:hover,
+    &.active{
+      color: $gray-400;
+      background-color: $gray-800;
+      border-color: $gray-500 $gray-500 $gray-500;
+    }
+  }
+}
+
+.nav-tabs-custom {
+  border-bottom: 2px solid $gray-500;
+
+  .nav-item {
+    position: relative;
+
+    .nav-link {
+      border: none !important;
+      font-weight: 400;
+    }
+  }
+}
+
+.nav-tabs-custom > li > a {
+  color: $dark;
+}
+
+.nav-tabs-custom > li > a::after {
+  content: "";
+  background: $purple;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -1px;
+  transition: all 250ms ease 0s;
+  transform: scale(0);
+}
+
+.nav-tabs-custom > li > a.active::after, .nav-tabs-custom > li:hover > a::after {
+  transform: scale(1);
+}
+
+.nav-tabs-custom > li > a.active {
+  color: $purple !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background: $purple;
+  color: $white;
+}
+
+.tab-profile{
+  .nav-link{
+    &:hover,
+    &.active{
+      color: $gray-400;
+      background-color: transparent;
+      border-color: $gray-500 $gray-500 $gray-500;
+    }
+  }
+}
+/*--accordion--*/
+
+.accordion {
+  box-shadow: none;
+  .card,
+  .btn:focus{
+    box-shadow: none;
+  }
+  .card-header{
+    background-color: $gray-800;
+    border: 1px solid $gray-800;
+    padding: 0 12px;
+  } 
+  .btn{
+    margin-bottom: 0;
+  }
+}
+
+#accordionExample .card-header h5{
+  button.collapsed::before{
+    content: "\f067";
+    transform: rotate(-90deg);
+  }
+  button::before {
+    content: "\f068";
+    font-family: 'Font Awesome 5 Free' !important;
+    font-weight: 600;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    transition: transform .25s;
+    transform: rotate(0deg);
+    color: $success;
+  }
+} 
+
+#accordionExample2 .card-header h5 {
+  button.collapsed::before {
+    content: '\f107';
+    transform: rotate(-180deg);
+  }
+  button::before {
+    content: '\f106';
+    font-family: 'Font Awesome 5 Free' !important;
+    font-weight: 600;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    transition: transform .25s;
+    transform: rotate(180deg);
+    color: $success;
+  }
+}

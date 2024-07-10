@@ -1,0 +1,121 @@
+
+label,.col-form-label{
+  font-size: 13px;
+  font-weight: 500;
+  color: $gray-500;
+}
+.form-control{
+  font-size: 13px;
+  color: $gray-400;
+  background: $gray-800;
+  border-color: $gray-600;
+  height: 38px;
+  &:focus {
+    color: $gray-400;
+    background: darken($gray-800, 1%);
+    border-color: $gray-600;
+    box-shadow: none;
+  }
+}
+
+.input-group{
+  .input-group-text{
+    font-size: 13px;
+  }
+}
+
+dt {
+  font-weight: 500;
+}
+.custom-select.is-valid, .was-validated .custom-select:valid,
+.custom-select.is-invalid, .was-validated .custom-select:invalid{
+  background-color: $gray-800;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::before,
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+  background-color: $gray-800;
+}
+
+.custom-radio .custom-control-input:disabled:checked~.custom-control-label::before,
+.custom-control-input:disabled~.custom-control-label::before{
+  background-color: darken($gray-600, 6%);
+}
+.custom-control-label::before{
+  background-color: $gray-600;
+}
+.custom-control-label::before,.custom-control-label::after {
+  top: 2px;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: $gray-500;
+}
+
+.form-control::-moz-placeholder {
+  color: $gray-500;
+}
+
+.form-control:-ms-input-placeholder {
+  color: $gray-500;
+}
+
+.form-control::-ms-input-placeholder {
+  color: $gray-500;
+}
+
+.form-control::placeholder {
+  color: $gray-500;
+}
+
+/*Bootstrap Form*/
+
+.input-group > .input-group-append .input-group-text,
+.input-group > .input-group-prepend .input-group-text{
+  color: $light;
+  background-color: lighten($gray-600, 2%);
+  border-color: $gray-600;
+}
+.input-group>.custom-file:not(:last-child) .custom-file-label, 
+.input-group>.custom-file:not(:last-child) .custom-file-label::after,
+.custom-file-label::after,
+.custom-file-label,
+.custom-file-input:focus~.custom-file-label{
+  background: darken($gray-800, 1%);
+  border-color: $gray-600;
+  box-shadow: none;
+  color: $gray-400;
+}
+.custom-select,
+.custom-select:focus{
+  background: url('../images/arrow.svg') no-repeat right 0.75rem center;
+  background-color: darken($gray-800, 1%);
+  border-color: $gray-600;
+  box-shadow: none;
+  color: $gray-400;
+}
+
+/*Rangeslider*/
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px $dark, 0px 0px 1px $dark;
+  background: $gray-800;
+  border-radius: 1.3px;
+  border: 0.2px solid $dark;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: lighten($gray-800, 3%);
+}
+
+.custom-range::-webkit-slider-thumb{
+  background-color: $pink !important;
+}
+.custom-range::-moz-range-thumb{
+  background-color: $pink !important;
+}
+.custom-range::-ms-thumb{
+  background-color: $pink !important;
+}
